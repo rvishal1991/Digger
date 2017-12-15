@@ -203,7 +203,7 @@ extension String{
     }
     
     public var cacheDir:String {
-        let path = NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true).last!
+        let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last!
         return (path as NSString).appendingPathComponent((self as NSString).lastPathComponent)
     }
     
